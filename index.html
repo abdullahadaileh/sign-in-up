@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="beforthelast-removebg-preview.png" alt="Logo" class="logo">
+            <img src="At the office-amico.png" alt="Background Image" class="background-image">
+        </div>
+
+        <div class="form-container hidden" id="signin-container">
+            <form id="signinForm" action="#">
+                <h1>Sign In</h1>
+                <input type="email" id="signinEmail" placeholder="Email" required />
+                <input type="password" id="signinPassword" placeholder="Password" required />
+                <button id="submitTheSignInUp" type="submit">Sign In</button>
+                <p>Don't have an account? <a id="signupLink" href="#">Sign Up</a></p>
+            </form>
+        </div>
+
+        <div class="form-container" id="signup-container">
+            <form id="signupForm" action="#">
+                <h1>Create Account</h1>
+                <input type="text" id="firstName" placeholder="First Name" required />
+                <input type="text" id="lastName" placeholder="Last Name" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <button id="submitTheSignInUp" type="submit">Sign Up</button>
+                <p>Already have an account? <a id="signinLink" href="#">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
